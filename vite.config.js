@@ -6,3 +6,4 @@ export default defineConfig({
   // base: '/ev/', // для собственного домена
   plugins: [react()],
 })
+// $env:Path += ";F:\Program\nodejs22"
