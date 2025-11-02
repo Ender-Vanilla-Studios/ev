@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.7.5",
   "type": "module",
-  "homepage": "https://ender-vanilla.ru/",
+  "homepage": "https://ender-vanilla.su/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
