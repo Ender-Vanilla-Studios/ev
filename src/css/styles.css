@@ -28,7 +28,7 @@ header {
 body {
     background-color: #531ca5; /* цвет фона под картинку */
     /*transition: background-color 0.3s ease; !* чтобы плавно сменять фон, если нужно *!*/
-    background: url("img/wallpaper-1.webp");
+    background: url("/img/wallpaper-1.webp");
     background-size: cover; /* Растягивать изображение на всю область фона */
     background-repeat: no-repeat; /* Не повторять изображение */
     background-attachment: fixed; /* Фон остаётся зафиксированным при прокрутке */
