@@ -29,7 +29,7 @@ function Header() {
                         <a href="#socseti">Контакты</a>
                         <a href="r&url=https://discord.com/channels/1072827575426109490/1373460124441645138">FAQ</a>
                         <a href="r?url=https://discord.com/channels/1072827575426109490/1199624750977273856">Wiki</a>
-                        <a href="evl">EVLauncher</a>
+                        {/*<a href="evl">EVLauncher</a>*/}
                         {/*<a href="/ua">UA</a>*/}
                     </nav>
                 </ul>
