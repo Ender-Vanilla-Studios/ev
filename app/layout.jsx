@@ -24,13 +24,13 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'Ender Vanilla',
         description: 'Без вайповая ванилла с элементами роле плэя',
-        images: ['https://ender-vanilla.su/pre.png'],
+        images: ['https://ender-vanilla.su/img/pre.png'],
     },
     openGraph: {
         title: 'Ender Vanilla',
         description: 'Без вайповая ванилла с элементами роле плэя',
         url: 'https://ender-vanilla.su/',
-        images: ['https://ender-vanilla.su/pre.png'],
+        images: ['https://ender-vanilla.su/img/pre.png'],
         type: 'website',
     },
 };
