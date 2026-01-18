@@ -16,6 +16,7 @@ function Footer() {
                 <a href="https://modrinth.com/organization/evs"><img src="img/logo/modrinth.svg" alt="Modrinth"/></a>
                 <a href="https://top-minecrafter.com/server/ender-vanilla/"><img src="img/logo/topminecrafter.ico" alt="TopMinecrafter"/></a>
                 <a href="https://www.youtube.com/@mirik9724"><img src="img/logo/Youtube.webp" alt="Youtube"/></a>
+                <a href="https://x.com/Mirik9724"><img src="img/logo/x.jpg" alt="X"/></a>
                 </div>
             </div>
             <p>Не связано с Mojang, Microsoft или Minecraft.</p>

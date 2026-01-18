@@ -91,9 +91,6 @@ function Main() {
                             ></iframe>
                         </div>
                     </div>
-
-                    <h2><a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.su:25989">+БЕДРОК СЕРВЕР</a></h2>
-
                 </div>
             </main>
             <Footer/>
