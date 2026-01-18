@@ -44,6 +44,8 @@ function Main() {
                         <p>Сначала приобретите проходку за 100₽</p>
                         <p>Пройдите процесс адоптации в нашем сообществе</p>
                         <p>Все! Теперь вы часть нашей истории</p>
+
+                        <h2><a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.su:25989" target="_blank">ТОЛЬКО ДЛЯ БЕДРОКА</a></h2>
                     </div>
                     <div className="mlg-v1">
                         <h2>Игра</h2>
