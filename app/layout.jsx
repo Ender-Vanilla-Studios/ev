@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
         <head>
             <meta charSet="utf-8"/>
 
-            <link rel="icon" href="/img/logo/ev.webp" type="image/png"/>
+            <link rel="icon" href="/img/logo/ev.webp" type="image/webp"/>
 
             <meta name="description"
                   content="Ender Vanilla - Без вайповая ламповая ванилла с элементами роле плэя | Minecraft сервер"/>
