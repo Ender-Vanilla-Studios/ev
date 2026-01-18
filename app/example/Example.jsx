@@ -1,6 +1,7 @@
+'use client';
 import React from "react";
-import Footer from "./menu/Footer.jsx";
-import Header from "./menu/Header.jsx";
+import Footer from "../menu/Footer.jsx";
+import Header from "../menu/Header.jsx";
 
 export default function Home() {
     return (
