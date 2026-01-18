@@ -19,7 +19,6 @@ export const metadata = {
     minecraft chill server, minecraft social server, minecraft friendly server, minecraft custom server, minecraft build server,
     minecraft no wipe, minecraft no wipes server, minecraft best servers, minecraft top servers
   `,
-    themeColor: '#9311bc',
     twitter: {
         card: 'summary_large_image',
         title: 'Ender Vanilla',
@@ -38,6 +37,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="ru">
+        <head>
+            <meta name="theme-color" content="#9311bc" />
+        </head>
         <body>{children}</body>
         </html>
     );
