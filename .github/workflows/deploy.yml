@@ -3,11 +3,15 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - main  # или master, если твоя ветка называется master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -19,4 +23,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:
-          folder: ./  # путь к папке со статическим сайтом
+          folder: ./
