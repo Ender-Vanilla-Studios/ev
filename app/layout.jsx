@@ -16,14 +16,14 @@ export default function RootLayout({ children }) {
             <title>Ender Vanilla</title>
             <link rel="canonical" href="https://ender-vanilla.su/"/>
 
-            <!-- {/* Open Graph */} -->
+            {/* Open Graph */}
             <meta property="og:title" content="Ender Vanilla"/>
             <meta property="og:description" content="Без вайповая ванилла с элементами роле плэя"/>
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://ender-vanilla.su/"/>
             <meta property="og:image" content="https://ender-vanilla.su/pre.png"/>
 
-            <!-- Twitter Card data -->
+            {/* Twitter Card data */}
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="Ender Vanilla"/>
             <meta name="twitter:description" content="Без вайповая ванилла с элементами роле плэя"/>
@@ -31,40 +31,40 @@ export default function RootLayout({ children }) {
             <meta name="twitter:image" content="https://ender-vanilla.su/pre.png"/>
 
 
-            <!-- Цветовая палитра -->
+            {/* Цветовая палитра */}
             <meta name="theme-color" content="#9311bc"/>
             <meta name="msapplication-TileColor" content="#9311bc"/>
             <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-            <!-- SEO -->
+            {/* SEO */}
             <meta name="robots" content="index, follow"/>
             <meta name="author" content="Mirik9724"/>
             <meta name="keywords" content="
-minecraft, minecraft server, ender vanilla, vanilla server, без вайпов, ролевой сервер, minecraft roleplay,
- mc rpg, minecraft survival, minecraft pvp, minecraft community, minecraft multiplayer, minecraft economy,
- minecraft factions, minecraft creative, minecraft hardcore, minecraft adventure, minecraft minigames,
- minecraft clans, minecraft quests, minecraft exploration, minecraft crafting, minecraft mining, minecraft whitelist,
- minecraft pve, minecraft ip, minecraft game, minecraft launcher, minecraft vanilla rp, minecraft vanilla gameplay,
- minecraft vanilla experience, minecraft vanilla mods, minecraft vanilla plugins, minecraft vanilla economy,
- minecraft vanilla community, minecraft vanilla players, minecraft vanilla updates, minecraft russian servers,
- minecraft chill server, minecraft social server, minecraft friendly server, minecraft custom server, minecraft build server,
- minecraft no wipe, minecraft no wipes server, minecraft best servers, minecraft top servers
-"/>
+            minecraft, minecraft server, ender vanilla, vanilla server, без вайпов, ролевой сервер, minecraft roleplay,
+             mc rpg, minecraft survival, minecraft pvp, minecraft community, minecraft multiplayer, minecraft economy,
+             minecraft factions, minecraft creative, minecraft hardcore, minecraft adventure, minecraft minigames,
+             minecraft clans, minecraft quests, minecraft exploration, minecraft crafting, minecraft mining, minecraft whitelist,
+             minecraft pve, minecraft ip, minecraft game, minecraft launcher, minecraft vanilla rp, minecraft vanilla gameplay,
+             minecraft vanilla experience, minecraft vanilla mods, minecraft vanilla plugins, minecraft vanilla economy,
+             minecraft vanilla community, minecraft vanilla players, minecraft vanilla updates, minecraft russian servers,
+             minecraft chill server, minecraft social server, minecraft friendly server, minecraft custom server, minecraft build server,
+             minecraft no wipe, minecraft no wipes server, minecraft best servers, minecraft top servers
+            "/>
 
-            <!-- Для улучшения UX -->
+            {/* Для улучшения UX */}
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-            <!-- Кэширование -->
+            {/* Кэширование */}
             <meta http-equiv="cache-control" content="no-cache"/>
             <meta http-equiv="expires" content="0"/>
 
-            <!-- Поддержка мобильных устройств -->
+            {/* Поддержка мобильных устройств */}
             <meta name="mobile-web-app-capable" content="yes"/>
             <meta name="apple-mobile-web-app-capable" content="yes"/>
             <meta name="apple-mobile-web-app-title" content="Ender Vanilla"/>
 
-            <!-- Контроль загрузки изображений -->
+            {/* Контроль загрузки изображений */}
             <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width"/>
         </head>
         <body>{children}</body>
