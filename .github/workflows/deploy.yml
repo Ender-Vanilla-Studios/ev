@@ -17,14 +17,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-      - name: Build site
-        run: |
-          npm install
-          npm run build
-          npm run export
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js site (static export)
+        run: npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
