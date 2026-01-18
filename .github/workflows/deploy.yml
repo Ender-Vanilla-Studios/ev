@@ -3,13 +3,13 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - main   # workflow запускается при пуше в main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       pages: write
       id-token: write
 
