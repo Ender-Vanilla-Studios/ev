@@ -92,7 +92,7 @@ function Main() {
                         </div>
                     </div>
 
-                    <h2><a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.su:25989" target="_blank">ТОЛЬКО ДЛЯ БЕДРОКА</a></h2>
+                    <h2><a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.su:25989">+БЕДРОК СЕРВЕР</a></h2>
 
                 </div>
             </main>
