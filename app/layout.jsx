@@ -39,6 +39,28 @@ export default function RootLayout({ children }) {
         <html lang="ru">
         <head>
             <meta name="theme-color" content="#9311bc" />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "Ender Vanilla",
+                        "url": "https://ender.vanilla.su",
+                        "logo": "https://ender.vanilla.su/img/logo/ev.webp",
+                        "description": "Без вайповая ламповая ванилла с элементами роле плэя",
+                        "sameAs": [
+                            "https://modrinth.com/organization/evs",
+                            "https://github.com/Ender-Vanilla-Studios",
+                            "https://discord.gg/Fh9mVnRy24",
+                            "https://vk.com/ender_vanilla",
+                            "https://t.me/ender-vanilla",
+                            "https://top-minecrafter.com/server/ender-vanilla",
+                            "https://hotmc.ru/minecraft-server-257605",
+                        ]
+                    })
+                }}
+            />
         </head>
         <body>{children}</body>
         </html>
