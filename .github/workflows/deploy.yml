@@ -3,7 +3,7 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main   # workflow запускается при пуше в main
 
 jobs:
   deploy:
@@ -20,5 +20,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+      - name: Build site
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out   # путь к готовым файлам после сборки
+          destination_branch: gh-pages
