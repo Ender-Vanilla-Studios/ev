@@ -2,15 +2,13 @@ import '../css/normalize.css';
 import '../css/styles.css';
 import '../css/mlg-v1.css';
 
-export default function RootLayout({ children }) {
-
-    export const metadata = {
-        title: 'Ender Vanilla',
-        description: 'Ender Vanilla - Без вайповая ламповая ванилла с элементами роле плэя | Minecraft сервер',
-        icons: {
-            icon: '/img/logo/ev.webp',
-        },
-        keywords: `
+export const metadata = {
+    title: 'Ender Vanilla',
+    description: 'Ender Vanilla - Без вайповая ламповая ванилла с элементами роле плэя | Minecraft сервер',
+    icons: {
+        icon: '/img/logo/ev.webp',
+    },
+    keywords: `
     minecraft, minecraft server, ender vanilla, vanilla server, без вайпов, ролевой сервер, minecraft roleplay,
     mc rpg, minecraft survival, minecraft pvp, minecraft community, minecraft multiplayer, minecraft economy,
     minecraft factions, minecraft creative, minecraft hardcore, minecraft adventure, minecraft minigames,
@@ -21,23 +19,23 @@ export default function RootLayout({ children }) {
     minecraft chill server, minecraft social server, minecraft friendly server, minecraft custom server, minecraft build server,
     minecraft no wipe, minecraft no wipes server, minecraft best servers, minecraft top servers
   `,
-        themeColor: '#9311bc',
-        twitter: {
-            card: 'summary_large_image',
-            title: 'Ender Vanilla',
-            description: 'Без вайповая ванилла с элементами роле плэя',
-            images: ['https://ender-vanilla.su/pre.png'],
-        },
-        openGraph: {
-            title: 'Ender Vanilla',
-            description: 'Без вайповая ванилла с элементами роле плэя',
-            url: 'https://ender-vanilla.su/',
-            images: ['https://ender-vanilla.su/pre.png'],
-            type: 'website',
-        },
-    };
+    themeColor: '#9311bc',
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Ender Vanilla',
+        description: 'Без вайповая ванилла с элементами роле плэя',
+        images: ['https://ender-vanilla.su/pre.png'],
+    },
+    openGraph: {
+        title: 'Ender Vanilla',
+        description: 'Без вайповая ванилла с элементами роле плэя',
+        url: 'https://ender-vanilla.su/',
+        images: ['https://ender-vanilla.su/pre.png'],
+        type: 'website',
+    },
+};
 
-
+export default function RootLayout({ children }) {
     return (
         <html lang="ru">
         <head>
