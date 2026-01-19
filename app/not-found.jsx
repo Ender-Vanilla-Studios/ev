@@ -9,7 +9,7 @@ export default function NotFound() {
         <>
             <Header />
             <div className="center-hor">
-                <h1>404 — Страница не найдена</h1>
+                <h1>404 - Упс</h1>
                 <div className="mlg-v1">
                     <p>Такой страницы не существует.</p>
                     <Link href="/">На главную</Link>
