@@ -8,17 +8,11 @@
     color: #f5f5f7;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-
     background: rgba(255, 255, 255, 0.04);
     -webkit-backdrop-filter: blur(5px) saturate(100%) contrast(1.3) brightness(1.1);
     backdrop-filter: blur(5px) saturate(100%) contrast(1.3) brightness(1.1);
     border-radius: 28px;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    /*box-shadow:*/
-    /*        0 8px 32px rgba(0, 0, 0, 0.25),*/
-    /*        0 20px 60px rgba(0, 0, 0, 0.22),*/
-    /*        inset 0 1px 0 rgba(255,255,255,0.25),*/
-    /*        inset 0 -1px 0 rgba(255,255,255,0.1);*/
     box-shadow:
             0 10px 28px rgba(0, 0, 0, 0.22),
             0 18px 48px rgba(0, 0, 0, 0.18),
@@ -29,6 +23,7 @@
     overflow: hidden;
     isolation: isolate;
     transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.6s ease, background 0.6s ease, border-radius 0.6s ease;
+    contain: layout paint;
 }
 
 @keyframes liquid-refract {
@@ -37,23 +32,26 @@
     100% { transform: translate(0, 0) rotate(180deg) scale(1); }
 }
 
-.mlg-v1:hover {
-    background: rgba(255,255,255,0.06);
-    transform: translateY(-2px) scale(1.01);
-    /*box-shadow:*/
-    /*        0 24px 60px rgba(0,0,0,0.35),*/
-    /*        0 40px 90px rgba(0,0,0,0.3),*/
-    /*        inset 0 1px 0 rgba(255,255,255,0.35),*/
-    /*        inset 0 -1px 0 rgba(255,255,255,0.15);*/
-
-    box-shadow:
-            0 12px 35px rgba(0, 0, 0, 0.32),
-            0 25px 60px rgba(0, 0, 0, 0.28),
-            inset 0 2px 4px rgba(255,255,255,0.25),
-            inset 0 -2px 6px rgba(255,255,255,0.12);
+@media (hover: hover) and (pointer: fine) {
+    .mlg-v1:hover {
+        background: rgba(255, 255, 255, 0.06);
+        transform: translateY(-2px) scale(1.01);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.32),
+        0 25px 60px rgba(0, 0, 0, 0.28),
+        inset 0 2px 4px rgba(255, 255, 255, 0.25),
+        inset 0 -2px 6px rgba(255, 255, 255, 0.12);
 
 
-    border-radius: 36px;
+        border-radius: 36px;
+    }
+
+    .mlg-v1-button:hover {
+        background: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        transform: translateY(-1px) scale(1.01);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
 }
 
 .mlg-v1 h2 {
@@ -122,18 +120,28 @@
 
 
     overflow: hidden;
-        isolation: isolate;
-        transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.6s ease, background 0.6s ease, border-radius 0.6s ease;
+    isolation: isolate;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.6s ease, background 0.6s ease, border-radius 0.6s ease;
+    contain: layout paint;
 }
 
 .mlg-v1 {
-    will-change: transform, box-shadow, border-radius;
+    will-change: transform;
 }
 
-.mlg-v1 p, h1, h2, h3, h4, h5, h6, li, ul, button{
+.mlg-v1 p,
+.mlg-v1 h1,
+.mlg-v1 h2,
+.mlg-v1 h3,
+.mlg-v1 h4,
+.mlg-v1 h5,
+.mlg-v1 h6,
+.mlg-v1 li,
+.mlg-v1 ul,
+.mlg-v1 button {
     transform: translateZ(0);
-    backface-visibility: hidden;
-    will-change: transform, background-position;
+    /*backface-visibility: hidden;*/
+    /*will-change: transform, background-position;*/
 }
 
 .mlg-v1-button {
@@ -150,7 +158,7 @@
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-radius 0.3s ease;
-    will-change: transform, box-shadow, background, border-radius;
+    will-change: transform, background;
     transform: translateZ(0);
     backface-visibility: hidden;
     position: relative;
@@ -168,15 +176,6 @@
     pointer-events: none;
     z-index: -1;
     transition: transform 0.3s ease;
-}
-
-.mlg-v1-button:hover {
-    background: rgba(255, 255, 255, 0.12);
-    box-shadow:
-            0 6px 16px rgba(0, 0, 0, 0.2),
-            inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px) scale(1.01);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .mlg-v1-button:active {
