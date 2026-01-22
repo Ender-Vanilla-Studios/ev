@@ -32,6 +32,7 @@ function Header() {
                         <a href="#socseti">Контакты</a>
                         <a href="r?url=https://discord.com/channels/1072827575426109490/1454393232418148362/1454393232418148362" target="_blank">FAQ</a>
                         <a href="r?url=https://drive.google.com/drive/folders/1HPH6rZcToXEjsEOa3P-3zZby4rgdSg1Z?usp=sharing" target="_blank">Обои</a>
+                        <a href="r?url=https://drive.google.com/file/d/1FzUO2WAweDJXrKTFLSnS1wy-TLeVZPh9/view?usp=sharing" target="_blank">Правила</a>
                         <a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.su:25989" target="_blank">+Сервер</a>
                     </nav>
                 </ul></div></div>
