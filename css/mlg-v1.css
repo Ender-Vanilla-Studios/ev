@@ -140,8 +140,8 @@
 .mlg-v1 ul,
 .mlg-v1 button {
     transform: translateZ(0);
-    /*backface-visibility: hidden;*/
-    /*will-change: transform, background-position;*/
+    backface-visibility: hidden;
+    will-change: transform, background-position;
 }
 
 .mlg-v1-button {

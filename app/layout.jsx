@@ -4,7 +4,7 @@ import '../css/mlg-v1.css';
 
 export const metadata = {
     title: 'Ender Vanilla',
-    description: 'Ender Vanilla - Без вайповая ламповая ванилла с элементами роле плэя | Minecraft сервер',
+    description: 'Ender Vanilla - Без вайповая ламповая ванилла с RP и QoL фичами | Minecraft сервер',
     icons: {
         icon: '/img/logo/ev.webp',
     },
@@ -22,12 +22,12 @@ export const metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Ender Vanilla',
-        description: 'Без вайповая ванилла с элементами роле плэя',
+        description: 'Без вайповая ламповая ванилла с RP и QoL фичами',
         images: ['https://ender-vanilla.su/img/pre.png'],
     },
     openGraph: {
         title: 'Ender Vanilla',
-        description: 'Без вайповая ванилла с элементами роле плэя',
+        description: 'Без вайповая ламповая ванилла с RP и QoL фичами',
         url: 'https://ender-vanilla.su/',
         images: ['https://ender-vanilla.su/img/pre.png'],
         type: 'website',
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
                         "name": "Ender Vanilla",
                         "url": "https://ender.vanilla.su",
                         "logo": "https://ender.vanilla.su/img/logo/ev.webp",
-                        "description": "Без вайповая ламповая ванилла с элементами роле плэя",
+                        "description": "Без вайповая ламповая ванилла с RP и QoL фичами",
                         "sameAs": [
                             "https://modrinth.com/organization/evs",
                             "https://github.com/Ender-Vanilla-Studios",
