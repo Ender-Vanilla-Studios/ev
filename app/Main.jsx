@@ -85,14 +85,6 @@ function Main() {
                     </div>
 
                     <div className="mlg-v1">
-                        <a href="https://minecraftrating.ru/" className="mr-vote-server" data-server-id="205874"><span
-                            id="mr-vote-title"><img src="//minecraftrating.ru/templates/theme/images/logo.png" alt=""/></span><span
-                            id="mr-vote-counter"><u></u><i></i></span></a>
-                        <Script
-                                src="//minecraftrating.ru/widgets_api/vote/vote_widget.js?v=400"/>
-                    </div>
-
-                    <div className="mlg-v1">
                         <h2>EV Гайды на YouTube🎵</h2>
                         <div style={{
                             position: "relative",
