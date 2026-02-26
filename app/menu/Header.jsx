@@ -27,7 +27,7 @@ function Header() {
                 <ul>
                     <nav>
                         <Link href="/">Главная</Link>
-                        <Link href="d">Донат</Link>
+                        <Link href="shop">Донат</Link>
                         <a href="r?url=https://drive.google.com/drive/folders/1nTKLR3do6z_DYg_5rWkd58MGcfDddAiK?usp=sharing" target="_blank">Карта ОФФ</a>
                         <a href="#socseti">Контакты</a>
                         <a href="r?url=https://discord.com/channels/1072827575426109490/1454393232418148362/1454393232418148362" target="_blank">FAQ</a>

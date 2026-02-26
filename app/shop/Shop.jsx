@@ -51,7 +51,15 @@ const products = [
 const usdRate = 100;
 
 export default function Shop() {
-    // Инициализация выбранных вариантов: первый вариант каждого товара (если есть)
+    const [modalData, setModalData] = useState(null);
+    const [selectedNetwork, setSelectedNetwork] = useState(null);
+    const closeModal = () => {
+        setModalData(null);
+        setSelectedNetwork(null);
+    };
+
+    const [playerNick, setPlayerNick] = useState("");
+
     const initialVariants = {};
     products.forEach(product => {
         if (product.variants && product.variants.length > 0) {
@@ -136,7 +144,6 @@ export default function Shop() {
                             )}
 
 
-                            {/* Цена и скидка */}
                             <p>
                                 Цена:{" "}
                                 {finalDiscountRub && finalDiscountRub !== finalPriceRub ? (
@@ -157,6 +164,18 @@ export default function Shop() {
                                 )}
                             </p>
 
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    const variantName = product.variants?.find(v => v.id === variantId)?.name || "";
+                                    setModalData({ title: product.title, price: priceUsd, variant: variantName });
+                                }}
+                                className={"mlg-v1-button"}
+                                style={{ width: '100%', padding: '10px', marginTop: '10px', cursor: 'pointer' }}
+                            >
+                                КУПИТЬ
+                            </button>
+
                             <div className={`product-description ${isOpen ? 'active' : ''}`}>
                                 {product.description}
                             </div>
@@ -166,6 +185,58 @@ export default function Shop() {
             </div>
 
             <Footer />
+
+            {modalData && (
+                <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.6)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 }} onClick={closeModal}>
+                    <div className={"mlg-v1"} onClick={e => e.stopPropagation()}>
+
+                        {!selectedNetwork ? (
+                            <>
+                                <h2>Офформление заказа</h2>
+                                <p>Товар: {modalData.title} (${modalData.price.toFixed(2)})</p>
+                                <input
+                                    type="text"
+                                    placeholder="Ваш ник на сервере"
+                                    value={playerNick}
+                                    className="mlg-v1-input"
+                                    onChange={(e) => setPlayerNick(e.target.value)}/>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '20px' }}>
+                                    <button className={"mlg-v1-button"} onClick={() => setSelectedNetwork('TON')}>TON (Toncoin/USDT)</button>
+                                    <button className={"mlg-v1-button"} onClick={() => setSelectedNetwork('TRON')}>TRON (TRC-20)</button>
+                                    <button className={"mlg-v1-button"} onClick={() => setSelectedNetwork('POLYGON')}>POLYGON (USDT/MATIC)</button>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <h2>Оплата через {selectedNetwork}</h2>
+                                <p style={{ color: '#4caf50', fontWeight: 'bold' }}>Сумма: ${modalData.price.toFixed(2)}</p>
+
+                                <div style={{ margin: '15px 0', background: '#000', padding: '10px', borderRadius: '5px' }}>
+                                    <p style={{ fontSize: '12px', color: '#888' }}>Адрес для перевода:</p>
+                                    <code style={{ wordBreak: 'break-all' }}>
+                                        {selectedNetwork === 'TON' && "UQBxio4hfaO4xpKmO9Z-WHpjVa5exoHjUcPps9hh0PcaxjAL"}
+                                        {selectedNetwork === 'TRON' && "-"}
+                                        {selectedNetwork === 'POLYGON' && "0x0645649E539ad81A3e3e71f2dDdC960AD29B568a"}
+                                    </code>
+                                </div>
+
+                                <p>После оплаты нажмите кнопку ниже для уведомления админа:</p>
+
+                                <a
+                                    href={`https://t.me{modalData.title}_${selectedNetwork}_${modalData.price}`}
+                                    target="_blank"
+                                    style={{ display: 'block', background: '#0088cc', color: '#fff', padding: '10px', borderRadius: '5px', textDecoration: 'none', marginTop: '10px' }}
+                                >
+                                    Я ОПЛАТИЛ
+                                </a>
+
+                                <button onClick={() => setSelectedNetwork(null)} style={{ marginTop: '15px', background: 'none', border: 'none', color: '#888', cursor: 'pointer' }}>← Назад к выбору сети</button>
+                            </>
+                        )}
+                    </div>
+                </div>
+            )}
+
         </>
     );
 }
