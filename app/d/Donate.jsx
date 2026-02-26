@@ -15,7 +15,7 @@ export default function Donate() {
                     <ul>
                         <li>
                             <p>
-                                <a href="https://discord.gg/3RxNaG9ftu" target="_blank" rel="noopener noreferrer">
+                                <a href="upsss" target="_blank" rel="noopener noreferrer">
                                     Криптовалюту(или переводом)
                                 </a>
                             </p>
