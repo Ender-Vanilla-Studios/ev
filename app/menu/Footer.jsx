@@ -9,6 +9,8 @@ function Footer() {
             <div className="social-icons" id="socseti">
                 <div className="im-corn">
                 <a href="https://t.me/ender-vanilla"><img src="img/logo/telegram.webp" alt="Telegram"/></a>
+                <a href="https://t.me/+UXjLZ8svuKE4MDBi"><img src="img/logo/telegram.webp" alt="Telegram 2"/></a>
+                <a href="https://fluxer.gg/fZb7FMBd"><img src="img/logo/fluxer.jpg" alt="Fluxer"/></a>
                 <a href="https://hotmc.ru/minecraft-server-257605"><img src="img/logo/Hotmc.ico" alt="Hotmc"/></a>
                 <a href="https://github.com/Ender-Vanilla-Studios"><img src="img/logo/github.png" alt="GitHub"/></a>
                 <a href="https://modrinth.com/organization/evs"><img src="img/logo/modrinth.svg" alt="Modrinth"/></a>
