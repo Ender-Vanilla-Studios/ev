@@ -10,7 +10,7 @@ function Header() {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className="header">
+        <header>
             <div className="logo">
                 <div className="im-corn">
                 <Link href="/">
@@ -18,7 +18,7 @@ function Header() {
                 </Link>
             </div></div>
 
-            <div className="burger" onClick={toggleMenu}>
+            <div className="mlg-v1-mo burger" onClick={toggleMenu}>
                 {menuOpen ? <CloseIcon /> : <MenuIcon />}
             </div>
 
@@ -28,6 +28,7 @@ function Header() {
                     <nav>
                         <Link href="/">Главная</Link>
                         <Link href="shop">Донат</Link>
+                        <Link href="ip">IP</Link>
                         <a href="r?url=https://drive.google.com/drive/folders/1nTKLR3do6z_DYg_5rWkd58MGcfDddAiK?usp=sharing" target="_blank">Карта ОФФ</a>
                         <a href="#socseti">Контакты</a>
                         <a href="r?url=https://discord.com/channels/1072827575426109490/1454393232418148362/1454393232418148362" target="_blank">FAQ</a>

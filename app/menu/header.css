@@ -18,18 +18,9 @@
         top: 10px;
         right: 10px;
         background: transparent;
-        border-radius: 5px;
+        border-radius: 15px;
         transition: background 0.3s ease;
         z-index: 1101;
-    }
-
-    /* Когда меню открыто - делаем фон градиентом */
-    .burger.open {
-        background: linear-gradient(90deg, rgba(68,68,68,0.8), rgba(68,68,68,0));
-    }
-
-    .burger:hover {
-        background: rgba(100, 100, 100, 0.7);
     }
 
     /* Меню */
@@ -39,7 +30,7 @@
         right: -100vh; /* скрыто */
         width: 250px;
         height: 100vh;
-        background: rgba(68, 68, 68, 0.5);
+        background: rgba(68, 68, 68, 0.25);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding: 60px 20px 20px;
@@ -61,19 +52,5 @@
         margin: 0;
         padding: 0;
         list-style: none;
-    }
-
-    .nav-menu li {
-        margin-bottom: 10px;
-    }
-}
-
-.header {
-    p, h1, h2, h3, h4, h5, h6, img{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    ul {
-        padding: 5px;
     }
 }
