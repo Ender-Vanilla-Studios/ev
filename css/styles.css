@@ -1,29 +1,3 @@
-header {
-    padding: 10px 20px; /* Внутренние отступы */
-    display: flex; /* Располагаем элементы в один ряд */
-    justify-content: space-between; /* Распределяем элементы по краям */
-    align-items: center; /* Центрируем по вертикали */
-    margin-left: -20px; /* Компенсация отступа страницы */
-    }
-    header img {
-        max-width: 50px; /* Максимальная ширина логотипа */
-        vertical-align: middle; /* Выравнивание по вертикали */
-    }
-    nav {
-        display: flex; /* Располагаем ссылки в один ряд */
-    }
-    nav a {
-        color: #FFFFFF; /* Белый цвет ссылок */
-        text-decoration: none; /* Убираем подчеркивание ссылок */
-        margin-left: 10px; /* Отступ между ссылками */
-        margin-right: 10px; /* Отступ между ссылками */
-        font-size: 18px; /* Размер текста ссылок */
-    }
-
-    nav a:hover {
-        text-decoration: underline; /* Подчеркивание при наведении */
-    }
-
 body {
     background-color: #531ca5; /* цвет фона под картинку */
     /*transition: background-color 0.3s ease; !* чтобы плавно сменять фон, если нужно *!*/

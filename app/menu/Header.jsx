@@ -22,9 +22,8 @@ function Header() {
                 {menuOpen ? <CloseIcon /> : <MenuIcon />}
             </div>
 
-            <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
-                <div className={menuOpen ? '' : 'mlg-v1-mo'}>
-                <ul>
+            <div className={`nav-menu  mlg-v1-mo ${menuOpen ? 'open' : ''}`}>
+                <ul className="header-ul">
                     <nav>
                         <Link href="/">Главная</Link>
                         <Link href="shop">Донат</Link>
@@ -36,7 +35,7 @@ function Header() {
                         <a href="r?url=https://drive.google.com/file/d/1FzUO2WAweDJXrKTFLSnS1wy-TLeVZPh9/view?usp=sharing" target="_blank">Правила</a>
                         <a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.su:25989" target="_blank">+Сервер</a>
                     </nav>
-                </ul></div></div>
+                </ul></div>
         </header>
     );
 }
