@@ -331,14 +331,35 @@ export default function Shop() {
                                     }}
                                     onClick={(e) => { if (!canProceed) e.preventDefault(); }}
                                 >
-                                    Написать админу (я оплатил)
+                                    Я оплатил (TG)
                                 </a>
+                                <a
+                                    href="https://web.fluxer.app/channels/1476168305458802706/1476502146668728404"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mlg-v1-button"
+                                    style={{
+                                        display: 'block',
+                                        marginTop: 12,
+                                        padding: '10px',
+                                        background: '#28a745',
+                                        color: '#fff',
+                                        textAlign: 'center',
+                                        borderRadius: 6,
+                                        textDecoration: 'none',
+                                        cursor: canProceed ? 'pointer' : 'not-allowed',
+                                        opacity: canProceed ? 1 : 0.6
+                                    }}
+                                    onClick={(e) => { if (!canProceed) e.preventDefault(); }}
+                                >
+                                    Я оплатил (Fluxer)
+                                </a>
+
 
                                 <div style={{
                                     background: '#2c1a00', padding: 12, borderRadius: 6,
                                     margin: '20px 0', fontSize: '0.9em', border: '1px solid #ff9800'
                                 }}>
-                                    <strong>Политика обработки платежей:</strong><br />
                                     Без правильного комментария транзакция не будет идентифицирована. Донат не выдаётся, средства не возвращаются. Проверяйте комментарий дважды перед отправкой.
                                 </div>
 
