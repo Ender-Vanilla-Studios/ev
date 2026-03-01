@@ -106,3 +106,21 @@ a:hover{
 .product-card{
     width: 200px
 }
+
+.plashka {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 90%;
+
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin: 0 auto;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    backdrop-filter: blur(16px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    transition: all 0.25s ease;
+}

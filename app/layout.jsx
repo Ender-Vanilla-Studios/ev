@@ -1,6 +1,7 @@
 import '../css/normalize.css';
 import '../css/styles.css';
 import '../css/mlg-v1.css';
+import AgreementPanel from "@/app/AgreementModal";
 
 export const metadata = {
     title: 'Ender Vanilla',
@@ -62,7 +63,10 @@ export default function RootLayout({ children }) {
                 }}
             />
         </head>
-        <body>{children}</body>
+        <body>
+        <AgreementPanel />
+        {children}
+        </body>
         </html>
     );
 }

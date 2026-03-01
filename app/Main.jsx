@@ -2,6 +2,7 @@
 import Header from "./menu/Header.jsx";
 import Footer from "./menu/Footer.jsx";
 import Script from "next/script";
+import Link from "next/link";
 
 function Main() {
     return (
@@ -55,6 +56,7 @@ function Main() {
                         <p>Пройдите процесс адоптации в нашем сообществе</p>
                         <p>Заполните заявку на проходку</p>
                         <p>Все! Теперь вы часть нашей истории</p>
+                        <Link  href={"ip"}>IP тут</Link>
                     </div>
                     <div className="mlg-v1">
                         <h2>Игра</h2>
