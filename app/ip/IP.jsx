@@ -22,20 +22,20 @@ export default function Home() {
 
                 <div className="mlg-v1">
                     <h2>🌍 Основной сервер</h2>
-                    <p className="server-ip">JE: je.ender-vanilla.su</p>
-                    <p className="server-ip">BE: be.ender-vanilla.su: 25989</p>
+                    <p className="server-ip">JE: je.ender-vanilla.cc</p>
+                    <p className="server-ip">BE: be.ender-vanilla.cc: 25989</p>
 
                     <div className="button-group">
                         <button
                             className="mlg-v1-button"
-                            onClick={() => copy("je.ender-vanilla.su", "je")}
+                            onClick={() => copy("je.ender-vanilla.cc", "je")}
                         >
                             {copied === "je" ? "✅ Скопировано" : "Скопировать JE"}
                         </button>
 
                         <button
                             className="mlg-v1-button"
-                            onClick={() => copy("be.ender-vanilla.su", "be")}
+                            onClick={() => copy("be.ender-vanilla.cc", "be")}
                         >
                             {copied === "be" ? "✅ Скопировано" : "Скопировать BE"}
                         </button>

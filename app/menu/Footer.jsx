@@ -20,6 +20,7 @@ function Footer() {
                 </div>
             </div>
             <p>Не связано с Mojang, Microsoft или Minecraft.</p>
+            <p>EMail: ender-vanilla@proton.me</p>
             <p>&copy; 2023 – 2026 Все права защищены<Link href={"/ss"}>.</Link></p>
         </footer>
     );

@@ -24,13 +24,13 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'Ender Vanilla',
         description: 'Без вайповая ламповая ванилла с RP и QoL фичами',
-        images: ['https://ender-vanilla.su/img/pre.png'],
+        images: ['https://ender-vanilla.cc/img/pre.png'],
     },
     openGraph: {
         title: 'Ender Vanilla',
         description: 'Без вайповая ламповая ванилла с RP и QoL фичами',
-        url: 'https://ender-vanilla.su/',
-        images: ['https://ender-vanilla.su/img/pre.png'],
+        url: 'https://ender-vanilla.cc/',
+        images: ['https://ender-vanilla.cc/img/pre.png'],
         type: 'website',
     },
 };
@@ -47,8 +47,8 @@ export default function RootLayout({ children }) {
                         "@context": "https://schema.org",
                         "@type": "Organization",
                         "name": "Ender Vanilla",
-                        "url": "https://ender.vanilla.su",
-                        "logo": "https://ender.vanilla.su/img/logo/ev.webp",
+                        "url": "https://ender.vanilla.cc",
+                        "logo": "https://ender.vanilla.cc/img/logo/ev.webp",
                         "description": "Без вайповая ламповая ванилла с RP и QoL фичами",
                         "sameAs": [
                             "https://modrinth.com/organization/evs",

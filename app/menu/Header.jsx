@@ -34,7 +34,7 @@ function Header() {
                         <a href="r?url=https://drive.google.com/drive/folders/1HPH6rZcToXEjsEOa3P-3zZby4rgdSg1Z?usp=sharing" target="_blank">Обои</a>
                         <Link href="rules">Правила</Link>
                         <Link href="ciapi">CIAPI</Link>
-                        <a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.su:25989" target="_blank">+Сервер</a>
+                        <a href="minecraft://?addExternalServer=Ender Vanilla|be.ender-vanilla.cc:25989" target="_blank">+Сервер</a>
                     </nav>
                 </ul></div>
         </header>
