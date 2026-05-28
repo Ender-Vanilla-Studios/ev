@@ -58,6 +58,7 @@ export default function RootLayout({ children }) {
                             "https://t.me/ender-vanilla",
                             "https://top-minecrafter.com/server/ender-vanilla",
                             "https://hotmc.ru/minecraft-server-257605",
+                            "https://ender-vanilla.su",
                         ]
                     })
                 }}
