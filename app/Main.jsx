@@ -3,6 +3,7 @@ import Header from "./menu/Header.jsx";
 import Footer from "./menu/Footer.jsx";
 import Script from "next/script";
 import Link from "next/link";
+import React from "react";
 
 function Main() {
     return (
@@ -53,38 +54,14 @@ function Main() {
                         <h2>Как играть?</h2>
                         <p>Подсоединяйтесь к нашему Discord серверу</p>
                         <p>Ознакомтесь с нашими правилами</p>
+                        <p>Загляните в <Link href={"wiki"}>вики</Link></p>
                         <p>Пройдите процесс адоптации в нашем сообществе</p>
                         <p>Заполните заявку на проходку</p>
                         <p>Все! Теперь вы часть нашей истории</p>
                         <Link  href={"ip"}>IP тут</Link>
                     </div>
-                    <div className="mlg-v1">
-                        <h2>Игра</h2>
-                        <p>Скачайте Minecraft JE 1.20.1+</p>
 
-                        <ul><p>Скачате рекомендуемые моды:</p>
-                            <li><a href="https://modrinth.com/mod/entitytexturefeatures" target="_blank">ETF</a> + <a
-                                href="https://modrinth.com/mod/entity-model-features" target="_blank">EMF</a> +
-                                <a href="https://modrinth.com/mod/cit-resewn" target="_blank">CIT Resewn</a> - для
-                                ресурс паков
-                            </li>
-                            <li><a href="https://modrinth.com/mod/entityculling" target="_blank">Entity Culling</a></li>
-                            <li><a href="https://modrinth.com/mod/xaeros-world-map" target="_blank">Xaero's World
-                                Map</a> + <a href="https://modrinth.com/mod/xaeros-minimap" target="_blank">Xaero's
-                                Minimap</a></li>
-                            <li><a href="https://modrinth.com/mod/distanthorizons" target="_blank">Distant
-                                Horizons</a> - расширяет чанки без лагов
-                            </li>
-                            <li><a href="https://modrinth.com/mod/continuity" target="_blank">Continuity</a> -
-                                объеденные текстуры
-                            </li>
-                            <li><a href="https://modrinth.com/plugin/plasmo-voice" target="_blank">Plasmo Voice</a> -
-                                голосовой чат прямо в игре
-                            </li>
-                            <li><a href="https://modrinth.com/mod/wi-zoom" target="_blank">WI Zoom</a> - зум</li>
-                            <li><a href="https://modrinth.com/mod/female-gender" target="_blank">Female Gender Mod</a> - женская модель игрока</li>
-                        </ul>
-                    </div>
+                    <a href="r?url=https://drive.google.com/drive/folders/1HPH6rZcToXEjsEOa3P-3zZby4rgdSg1Z?usp=sharing" target="_blank">Обои</a>
 
                     <div className="mlg-v1">
                         <h2>EV Гайды на YouTube🎵</h2>

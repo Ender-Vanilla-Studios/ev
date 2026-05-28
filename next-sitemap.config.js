@@ -7,6 +7,7 @@ module.exports = {
         '/ss',
         '/example',
         '/r',
-        '/mlg'
+        '/mlg',
+        '/wiki'
     ],
 };
