@@ -10,7 +10,7 @@ function Footer() {
                 <div className="im-corn">
                 <a href="https://t.me/ender-vanilla"><img src="img/logo/telegram.webp" alt="Telegram"/></a>
                 <a href="https://t.me/+UXjLZ8svuKE4MDBi"><img src="img/logo/telegram.webp" alt="Telegram 2"/></a>
-                <a href="https://discord.gg/9xP9uUK25"><img src="img/logo/discord.svg" alt="Discord"/></a>
+                <a href="https://discord.gg/r4bSc5HfdD"><img src="img/logo/discord.svg" alt="Discord"/></a>
                 <a href="https://hotmc.ru/minecraft-server-257605"><img src="img/logo/Hotmc.ico" alt="Hotmc"/></a>
                 <a href="https://minecraftrating.ru/server/endervanilla/"><img src="img/logo/minecraftrating.png" alt="MinecraftRating"/></a>
                     <a href="https://top-minecrafter.com/server/ender-vanilla/"><img src="img/logo/topminecrafter.ico" alt="TopMinecrafter"/></a>
